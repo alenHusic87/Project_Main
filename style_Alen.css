@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+html{
+	background-color:red;
+	
+}
+.wrapper {
+ 	background: url("background_image.png") no-repeat;
+	background-size:cover;
+	height:100vh;
+	background-position:left;
+}
+
+ul li a{
+  display: block;
+  color: white;
+
+
+}
+ul.menu,
+ul.social_items{
+	display: flex;
+	flex-basis: auto;
+	margin-right: 15px;
+	text-align: center
+}
+.navbar ul.menu a{
+	
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+}
+.navbar .logo{
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color:white;
+	margin-left: auto;
+    margin-right: auto;
+}
+.logo
+{
+	color:white;
+	margin-left: 20px;
+	 
+}
+
+.navbar_2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:rgba(0,0,0,.1);
+
+}
+
+.hedeer_btn 
+{
+  font-family:"Roboto" ,sans-serif;
+  background-color: #0172d9;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px
+}
+
+.navbar.navbar_2 ul.menu a:hover
+{
+	background: #0067c7;
+	font-size:auto;
+}
+
+.navbar.navbar_2 ul.social_items a
+{
+	margin: 0 5px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 25px;
+	transition: all 0.2 ease;
+	transform: scaleX(-1);
+	font-weight: lighter;
+}
+div.absolute 
+{
+	 padding:5px;
+	  position: relative;
+	  top: 10%;
+	  width: 60%;
+	  
+	  /*border: 1px solid #73AD21;*/
+
+}
+section{
+	
+	margin-left: 140px;
+	margin-right: 170px;
+	margin-top: 5px;
+	margin-bottom:5px;
+	
+}
+
+.text_en_gras_section { /*postione   le text  We make en gras et agmante sa taille */
+	font-weight: 600;
+	color:white;
+	font-size:3.0em;
+	margin-top: 5px;
+	margin-bottom:5px;
+}
+
+.text_section { /*postion et definir la taille  le text  qui  est dans la section   */
+	font-weight: 100;
+	color:white;
+	font-size:.7em;
+	line-height: 1.7;
+	margin-top: 40px;
+	margin-bottom:40px;
+	
+}
+.section_button{ /*Modifei le button qui est dans la section */
+  background-color:  #007ef3;
+  transition:all 0.3s ease 0s;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+
+  margin-top: 5px;
+  margin-bottom:5px;
+  font-size: 10px;
+}
+article{/*Postione le article */
+  background-color:  white; 
+  padding: 5% 0;
+
+	
+}
+h3 {/*Modifie et place  le text qui dans H3*/
+  font-size: 1.9em;
+  color:black;
+
+  text-align: center;
+  font-weight: 600;
+
+}
+.text_article {/*Modifie le text qui est dans le article et postione le */
+  
+  columns: 500px 1;
+  font-family:"Roboto" ,sans-serif;
+  color:	#808080;
+  font-size:.75em;
+  text-align: center;
+  padding: 3% 10%;
+
+}
+.container_of_four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+	
+	
+}
+.frist_container{
+  background-color:  #0172d9;
+  padding: 12% 0;
+  padding-left: 80px;
+}
+.centre_premier_Cont{ /* Centre H1 dans premier container*/
+	
+  color:white;
+  font-size: 2.2em;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 80px;
+}
+img{/*Centre dasn le image*/
+	max-width: 100%;
+	background-size: cover;
+
+}
+.text_of_frst_cont{/* Position le text qui est dans le premier contaire*/
+
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  line-height: 1.7;
+  color:white;
+  font-size:.9em;
+  
+}
+.learn_button{
+	
+  padding-right: 50px;
+  padding-left: 80px;
+  color:white;
+	
+}
+.cetvrti_container{
+		 background-color:  #0172d9; 
+	 	
+  padding: 12% 0;
+
+  padding-right: 30px;
+  
+  padding-left: 80px;
+  text-align:centre;
+ 
+}
+.centre_quatreim_Cont{ /* Centre H1 dans quatriem container*/
+	
+  color:white;
+  font-size: 2.2em;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 80px;
+}
+.text_of_quatreim_cont{/* Position le text qui est dans le quatriem contaire*/
+
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  line-height: 1.7;
+  color:white;
+  font-size:.9em;
+  
+}
+
+
+
+
+
+
+
+
+
+.grid_Footer{
+   padding: 7% 2%;
+   background-color:  #f4f4f4; 
+   border: 1px solid #f4f4f4;
+   text-align: center;
+   font-size:1.6em;
+ 
+
+}
+.grid_Footer_Icons{
+
+   padding: 50px;
+   background-color:  white; 
+   border: 1px solid #f4f4f4;
+   text-align: center;
+   letter-spacing: 10px;
+  
+}
+
+ .button_footer{
+   background-color:   #2f95f5; 
+   border-radius: 5px;
+   border: 1px solid white;
+   color: white;
+   padding: 15px 5px;
+   cursor: pointer;
+   text-align: center;
+   width: 20%;
+    
+ 
+}
+.postione_image_right{/*Postione image dans div*/
+	background-size: cover;
+	background-image: url(img_1_RIGHT.png);
+	
+}
+.postione_image_left{/*Postione image tdans div */
+	background-size: cover;
+	background-image: url(img_LEft_bas.png);
+}
+ .filter-black{/* Change la couleur de la icon */
+    filter: invert(48%) sepia(79%) saturate(0%) hue-rotate(86deg) brightness(69%) contrast(1000%);
+	
+ }
+ .grid_Footer_B_system{/* Postione le icon au center*/
+
+   padding: 100px;
+   background-color:   white; 
+   border: 1px solid #f4f4f4;
+   text-align:center;
+}
