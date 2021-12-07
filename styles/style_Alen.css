@@ -1,13 +1,10 @@
 body {
   max-width: 1250px;
   margin: 0 auto;
-  
-
 }
 
 /*Ajoute la color  sur tout la page pour voir inperfection */
 html{ background-color: rgb(12, 12, 12);   }
-
 /*Place laimge du background */
 .main_page{  
  /* background-image: url(/images/Man_working.png) ;*/
@@ -16,10 +13,8 @@ html{ background-color: rgb(12, 12, 12);   }
   background-position: 90% 0%;
   background-color: #2292f5;
  }
-
 /*Propriete du Menu au cntre*/
 .menu_centre{ max-width:  800px;width:500px; }
-
 /*Propriete du NavBar */
 .navbar {
   background-color: rgba(4, 84, 170, 0.2);
@@ -81,7 +76,6 @@ html{ background-color: rgb(12, 12, 12);   }
   padding-top: 100px;
   width: 400px;
 }
-
 /*Modifie le text dans le main qui es dans H1*/
 .containaire_we_make_magic h1 {  font-weight: 800; font-size: 5.0em; }
 
@@ -99,11 +93,9 @@ html{ background-color: rgb(12, 12, 12);   }
 
 /*Postione le P et modifie la coleur  */
 .containaire_whatdowe p{  font-family:"Roboto" ,sans-serif;  font-size: 1.9em; color:#808080;;  text-align:center;   font-size: 1.3em;  padding: 2% 8%;  }
-
-
 /*Postione le conainaire of 4 */
-
-  .container_of_four {
+  .container_of_four 
+  {
     margin: 0;
     max-width: 1300px;
     overflow: hidden;
@@ -113,11 +105,6 @@ html{ background-color: rgb(12, 12, 12);   }
     /*grid-auto-rows: minmax(100px, auto);*/
     width:100%;
   }
-
-
-
-
-
 /*Postione le premier container of $*/
 .frist_container{   background-color:  #0172d9;padding: 12% 0;padding-left: 80px;}
 
@@ -141,7 +128,6 @@ html{ background-color: rgb(12, 12, 12);   }
     background-position: center;
   }
 
-
 /*Postione le container du quatriem box */
 .quatrime_container{  background-color:  #0172d9; padding: 12% 0;padding-right: 120px;padding-left: 80px; text-align:center ; }
 /*Postione H1 et modifie le texte */
@@ -150,10 +136,6 @@ html{ background-color: rgb(12, 12, 12);   }
 /*Postione p et modifie le texte */
 .quatrime_container p{  line-height: 1.7;  color:white; font-size:1.1em; text-align:left; }
 
-
-
-
-/* NEEDED STYLES */
 label {
   display: flex;    
   color:white;
@@ -168,7 +150,6 @@ label {
   padding-top: 10px;
   justify-content: space-between;
 }
-
 label::after {
   content: '+';
   font-size: 22px;
@@ -178,19 +159,19 @@ label::after {
   top: 2px;
   color:white;
 }
-
 input:checked + label::after {
   content: '-';
   right: 14px;
   top: 3px;
 }
-
-.content {
-color: white;
+.content
+{
+  color: white;
 }
 
-input + label + .content {
-display: none;
+input + label + .content
+{
+  display: none;
 }
 
 input:checked + label + .content {
@@ -201,10 +182,8 @@ input {
 display: none;
 }
 
-  
-
 /*Le container formulaire*/
-.container_formulaire
+.container_formulaire 
 { 
     background-color: rgb(255, 255, 255);  
      padding: 5% 0;
@@ -215,36 +194,40 @@ display: none;
 }
 
 .image_woman{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  box-sizing: border-box;
+  width: 25%;
+  padding-left: 30px;
+  padding-right: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left:50%;
   background: #DFF0FF;
   border-radius: 4px;
- padding-left: 30px;
- padding-right: 30px;
- padding-top: 20px;
- padding-bottom: 20px;
- margin-left:50%
-
-   
 }
 
-.image_woman p{font-size:1.3em; display: flex;  align-items: flex-start; }
+.image_woman p{
+  font-size:1.0em; 
+  display:block;
+  margin-block-start: 1em;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.image_woman address{font-size:1.0em; line-height:30px;}
 
 .image_womanbox_2{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: #edeff1;
-  border-radius: 4px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
-  margin-top:4%;
+  color:blue;
+  background: #edeff1;
+  box-sizing: border-box;
+  width: 25%;
+  padding-left: 30px;
+  padding-right: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-left:50%;
-  color:blue
+  margin-top:2%;
+  border-radius: 4px;
   
 
 }
@@ -260,7 +243,8 @@ display: none;
 
 
 /*Postione le container  footer ou sont les icons */
-.containaire_footer_icons{  padding: 50px; background-color:  white;  border: 1px solid #f4f4f4;  text-align: center;  letter-spacing: 20px; }
+.containaire_footer_icons  {  padding: 50px; background-color:  white;  border: 1px solid #f4f4f4;  text-align: center;  letter-spacing: 20px; }
+.containaire_footer_icons a{color:black;}
 
 /*Postione le container footer de logo b system */
 .containaire_footer_b_system{ padding: 100px;  background-color:   white; border: 1px solid #f4f4f4; text-align:center; }
