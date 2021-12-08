@@ -3,6 +3,28 @@ body {
   margin: 0 auto;
 }
 
+
+.menu_centre ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+.menu_centre li{
+ float: left;
+ display: flex;
+
+}
+.menu_centre li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  
+}
+
 /*Ajoute la color  sur tout la page pour voir inperfection */
 html{ background-color: rgb(12, 12, 12);   }
 /*Place laimge du background */
@@ -14,14 +36,14 @@ html{ background-color: rgb(12, 12, 12);   }
   background-color: #2292f5;
  }
 /*Propriete du Menu au cntre*/
-.menu_centre{ max-width:  800px;width:500px; }
+.menu_centre  { max-width:  800px;width:600px; }
 /*Propriete du NavBar */
 .navbar {
   background-color: rgba(4, 84, 170, 0.2);
   align-items: center;
   height: 80px;
   width: 100%;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 2fr 1fr;
 }
 .navbar a {
