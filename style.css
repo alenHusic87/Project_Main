@@ -1,0 +1,297 @@
+
+
+* {
+    box-sizing: border-box;
+    
+
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width:100%;
+   
+}
+.flex-container_We_Make{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    
+   
+  }
+  .flex-container_How_We{
+  
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    text-align: center;
+    
+
+  }
+  
+  .flex-item-left {
+    
+    padding: 0px;
+   
+    background-color: rgb(255, 127, 127);
+   
+  }
+  
+  .flex-item-right {
+   
+    background-color: rgb(26, 243, 6);
+
+    
+  }
+  .flex-item-right-img{
+   
+    background-size: cover;
+
+  }
+  .flex-item-left-how_we{
+     
+    background-color: #0172d9;
+  }
+
+
+  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(38, 0, 255);
+
+}
+
+main,
+footer,
+header {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10px; 
+    background: rgba(25, 0, 250, 0.1);
+    
+}
+.containaire_whatdowe{
+    background-color: white;
+    
+    
+    
+}
+.containaire_whatdowe> h1  {
+    display: flex;
+    justify-content:center;
+}
+.containaire_whatdowe >p {
+    font-family:"Roboto" ,sans-serif;  font-size: 1.9em; color:#808080;;  text-align:center;   font-size: 1.3em;  padding: 2% 8%; 
+}
+
+main {
+    flex-direction: column;
+    background: blue;
+    padding: 0;
+    flex: 1;
+}
+
+footer {
+    min-height: 80px
+    color: white;
+    background: rgb(245, 6, 6);
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    z-index: 7;
+}
+
+/* .logo > img {
+    width: 200px;
+} */
+
+/* Style le  menu */
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    background:#0387fa
+    white-space: nowrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li > a {
+    padding: 0 20px;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+.menu > li > a:hover {
+    
+    background-color:#0387fa;
+    
+}
+header {
+    padding: 0 20px;
+}
+
+/* Style le  menu */
+
+.menu {
+    justify-content: flex-end;
+}
+
+.menu > li > a {
+    height:  100px;
+    text-decoration: none;
+}
+
+
+
+/* Cahcher = the_check */
+
+#the_check,
+#the_check + label {
+    display: none;
+}
+
+
+
+
+
+/* Settings just pour  mobile  */
+
+@media screen and (max-width: 768px) {
+ 
+
+    img{
+        max-width:100%;
+    }
+    .flex-container_We_Make {
+        
+        flex-direction: column-reverse;
+    }
+    .flex-container_How_We{
+        display: flex;
+        flex-direction: column-reverse;
+  
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        position:absolute;
+        align-items: baseline;
+        top:40px;
+    }
+
+ 
+    /* Montre le the_check */
+
+    #the_check,
+    #the_check + label {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height:  100px;
+        top: 0;
+        width: 20%;
+        font-size: 30px;
+    }
+
+    /* Stylizing the_check  */
+
+    #the_check {
+        opacity: 0;
+        z-index: 9;
+        cursor: pointer;
+    }
+
+    #the_check + label > img,
+    #the_check + label > span {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white;
+        transition: .3s;
+        z-index: 2;
+        left: 20px;
+    }
+
+    #the_check:not(:checked) + label > img {
+        opacity: 0;
+        transform: scale(0.01, 0.01);
+    }
+
+    #the_check:checked + label > img {
+        transition-delay: .3s;
+    }
+
+    #the_check:checked + label > span {
+        opacity: 0;
+       
+    }
+
+    /* Stylizing the menu */
+
+    .menu {
+        align-items: baseline;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        transition: .3s;
+        z-index: 5;
+    }
+
+    #the_check:checked ~ .menu {
+        
+        margin-top: 100px;
+        box-shadow: 0 240px 90px 120px rgba(0, 0, 0, 0.8);
+        height: 240px margin-top: 100px;
+    }
+
+    #the_check:not(:checked) ~ .menu {
+        height:  100px;
+        padding: 35px 0 0 25px;
+        opacity: 0;
+    }
+
+    .menu > li > a,
+    .menu > li {
+        height:60px;
+        width: 100%;
+        transition: .3s;
+        text-decoration: none;
+    }
+
+    #the_check:not(:checked) ~ .menu > li > a,
+    #the_check:not(:checked) ~ .menu > li {
+        padding: 5px 0;
+        height: 5px;
+        width: 22px;
+    }
+
+    #the_check:not(:checked) ~ .menu > li > a {
+        font-size: 5px;
+    }
+
+
+}
