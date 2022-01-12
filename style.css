@@ -15,7 +15,8 @@ img{
    
 }
 .flex-container_We_Make{
-    display: flex;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
     flex-direction: row;
     font-size: 20px;
     text-align: center;
@@ -24,11 +25,27 @@ img{
   }
   .flex-container_How_We{
   
-    display: flex;
+    display: grid;
     flex-direction: row;
     font-size: 10px;
     text-align: center;
-    
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .container_WorkingTable{
+    display: grid;
+    flex-direction: row;
+    font-size: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .container_Formulaire{
+    display: grid;
+    flex-direction: row;
+    font-size: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
 
   }
   
@@ -46,14 +63,10 @@ img{
 
     
   }
-  .flex-item-right-img{
-   
-    background-size: cover;
 
-  }
   .flex-item-left-how_we{
      
-    background-color: #0172d9;
+    background-color: #7bd901;
   }
 
 
@@ -182,14 +195,31 @@ header {
         max-width:100%;
     }
     .flex-container_We_Make {
-        
+        display: flex;
         flex-direction: column-reverse;
+        grid-template-columns: 1fr;
     }
     .flex-container_How_We{
         display: flex;
         flex-direction: column-reverse;
   
     }
+    .container_WorkingTable{
+
+        display: flex;
+        flex-direction: column;
+        
+        grid-template-columns: 1fr;
+        
+    }
+    .container_Formulaire{
+        display: flex;
+        flex-direction: column;
+        
+        grid-template-columns: 1fr;
+
+    }
+
 
     .logo {
         width: 100%;
